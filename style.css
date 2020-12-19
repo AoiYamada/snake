@@ -58,3 +58,8 @@ body {
 .apple {
   background-color: black;
 }
+
+.key {
+  width: 30px;
+  height: 30px;
+}

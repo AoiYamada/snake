@@ -130,3 +130,33 @@ document.onkeydown = (event) => {
       break;
   }
 };
+
+const key4Dom = document.getElementById("key-4");
+key4Dom.onclick = () => {
+  if (headDirection !== "right") {
+    direction = "left";
+  }
+};
+
+const key2Dom = document.getElementById("key-2");
+key2Dom.onclick = () => {
+  if (headDirection !== "down") {
+    direction = "up";
+  }
+};
+
+const key6Dom = document.getElementById("key-6");
+key6Dom.onclick = () => {
+  console.log(1);
+  if (headDirection !== "left") {
+    direction = "right";
+  }
+};
+
+const key8Dom = document.getElementById("key-8");
+key8Dom.onclick = () => {
+  console.log(1);
+  if (headDirection !== "up") {
+    direction = "down";
+  }
+};
