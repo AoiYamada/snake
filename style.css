@@ -1,0 +1,60 @@
+:root {
+  font-size: 13px;
+  font-family: "Arial";
+  --star: #fff000;
+  --text-primary: #000000;
+  --text-secondary: #ff9190;
+  --bg-primary: #0b0723;
+  --bg-secondary: #120c6e;
+  --bg-tertiary: #5e72eb;
+  --bg-tertiary-dark: #7586ee;
+  --transition-speed-fast: 0.3s;
+  --transition-speed-medium: 1s;
+  --transition-speed-slow: 3s;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  white-space: initial;
+  box-sizing: inherit;
+  color: var(--text-primary);
+  user-select: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+.container {
+  padding: 10px;
+}
+
+.board {
+  border: 1px solid black;
+  width: 300px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.cell {
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+}
+
+.snake,
+.apple {
+  background-color: black;
+}
