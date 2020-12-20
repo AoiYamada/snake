@@ -52,13 +52,13 @@ const start = () => {
   frameLoop = setInterval(() => {
     headDirection = direction;
     if (
-      forbiddenHeadIdxRemainder[direction] &&
-      forbiddenHeadIdxRemainder[direction] === headIdx % 30
+      forbiddenHeadIdxRemainder[headDirection] &&
+      forbiddenHeadIdxRemainder[headDirection] === headIdx % 30
     ) {
       return stop();
     }
 
-    headIdx += directions[direction];
+    headIdx += directions[headDirection];
     
     if(!cellDoms[headIdx]) {
       return stop();
