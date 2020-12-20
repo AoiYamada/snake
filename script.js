@@ -59,6 +59,11 @@ const start = () => {
     }
 
     headIdx += directions[direction];
+    
+    if(!cellDoms[headIdx]) {
+      return stop();
+    }
+
     const nextDom = cellDoms[headIdx];
 
     if (nextDom.classList.contains("snake")) {
